@@ -58,10 +58,17 @@ public class Ass1 {
             }
             return balance;
         }
-        public int transferTo(Account another, int balance){
-            another.balance += balance;
-            this.balance -= balance;
-            return this.balance;
+        public int transferTo(Account another, int amount){
+            if(amount<=balance)
+            {
+                another.balance= amount;
+                balance-= amount;
+            }
+            else
+            {
+                System.out.println("Amount exceede balance");
+            }
+            return balance;
         }
                 
         public String tooString()

@@ -12,7 +12,6 @@ package ass.pkg2;
 public class Ass2 {
 
     /**
-     * @param args the command line arguments
      */
     public class InvoiceItem
     {
@@ -59,6 +58,7 @@ public class Ass2 {
             {
                 String st="InvoiceItem[id ="+getID()+" ,desc="+getDesc()+" ,qty="+getQty()+" ,unitPrice="+getUnitPrice()+"]";
                 return st;
+            }
        
     }
     
